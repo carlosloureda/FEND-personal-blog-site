@@ -9,6 +9,49 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Personal Blog Site</h1>
+    <header>
+      <h1>Personal Blog Site</h1>
+    </header>
+    <main>
+      <!-- <section> -->
+      <article class="card">
+        <!-- TODO: h2 or h1? -->
+        <h2>Star Wars</h2>
+        <!-- image -->
+        <!-- <img src="" alt=""> -->
+        <p>Title</p>
+        <a href="./posts/star-wars.html">Read more</a>
+      </article>
+      <article class="card">
+        <!-- TODO: h2 or h1? -->
+        <h2>Empire Strikes Back</h2>
+        <!-- image -->
+        <!-- <img src="" alt=""> -->
+        <p>Summary</p>
+        <a href="./posts/empire-strikes-back.html">Read more</a>
+      </article>
+      <article class="card">
+        <!-- TODO: h2 or h1? -->
+        <h2>Return of the Jedy</h2>
+        <!-- image -->
+        <!-- <img src="" alt=""> -->
+        <p>Summary</p>
+        <a href="./posts/return-of-the-jedy.html">Read more</a>
+      </article>
+      <!-- </section> -->
+    </main>
+    <aside>
+      <p>Aside navbar</p>
+      <nav><p>Navigation links</p></nav>
+    </aside>
+    <footer>
+      <p>
+        Copyright
+        <script>
+          document.write(`©${new Date().getFullYear()}`);
+        </script>
+        All rights reserved
+      </p>
+    </footer>
   </body>
 </html>

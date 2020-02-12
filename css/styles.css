@@ -1,3 +1,65 @@
+:root {
+  --main-bg-color-1: #444444;
+  /* --main-bg-color-1:
+  --main-bg-color-2: */
+  --main-bg-color-2: #020024;
+}
+
 h1 {
-  color: blue;
+  color: white;
+}
+
+body {
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: var(--main-bg-color-1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100% 50px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0 auto;
+  /* grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main sd sd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft"; */
+}
+
+header {
+  grid-area: 1 / 1 / 2 / 5;
+  /* grid-area: hd; */
+
+  /* background-color: red; */
+  background: var(--main-bg-color-2);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 20%,
+    rgba(59, 59, 64, 1) 59%,
+    rgb(118, 127, 129) 87%
+  );
+}
+
+main {
+  background-color: black;
+  grid-area: 2 / 1 / 3 / 4;
+  /* grid-area: main; */
+}
+
+aside {
+  /* grid-area: sd; */
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: var(--main-bg-color-2);
+}
+
+footer {
+  grid-area: 3 / 1 / 4 / 5;
+  /* grid-area: ft; */
+  background: var(--main-bg-color-2);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 20%,
+    rgba(59, 59, 64, 1) 59%,
+    rgba(118, 127, 129, 1) 87%
+  );
 }

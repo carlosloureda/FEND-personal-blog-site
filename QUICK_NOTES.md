@@ -34,5 +34,7 @@ For my card I want to use:
 
 > SVG is an image format for vector graphics. It literally means Scalable Vector Graphics. Basically, what you work with in Adobe Illustrator. You can use SVG on the web pretty easily, but there is plenty you should know.
 
-> I got this line separator done with svg vectors that I will add as a separator element later as an SVG separator inline:
-> [svg-separator](./images/line-separator.svg)
+- I got this line separator done with svg vectors that I will add as a separator element later as an SVG separator inline [svg-separator](./images/line-separator.svg)
+
+- For animations I am following [CSSTricks docs](https://css-tricks.com/almanac/properties/a/animation/) and focusing on [transform](https://css-tricks.com/almanac/properties/t/transform/) and [filter](https://css-tricks.com/almanac/properties/f/filter/)
+- Another good resource for animations is https://daneden.github.io/animate.css/

@@ -5,6 +5,12 @@
   --main-bg-color-2: #020024;
 }
 
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
   color: white;
 }

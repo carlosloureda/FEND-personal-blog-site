@@ -7,38 +7,37 @@
     <title>FEND Personal Blog Site</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/card.css" />
   </head>
   <body>
     <header>
       <h1>Personal Blog Site</h1>
     </header>
-    <main>
+    <main class="container">
       <!-- <section> -->
       <article class="card">
-        <!-- TODO: h2 or h1? -->
-        <h2>Star Wars</h2>
-        <!-- image -->
-        <!-- <img src="" alt=""> -->
-        <p>Title</p>
-        <a href="./posts/star-wars.html">Read more</a>
+        <div class="card__image-container">
+          <img
+            class="card__image"
+            src="./images/a-new-hope.jpg"
+            alt="A New Hope film cover, Luke holding a ligthsable, Han Solo a gun, also Leia and Obi Wan appear there"
+          />
+        </div>
+        <!-- SVG: Line separator -->
+
+        <div class="card__content">
+          <h2 class="card__title">A New Hope</h2>
+          <p>
+            Have you been in many battles? Several, I think. Actually, there's
+            not much to tell. I'm not much more than an interpreter, and not
+            very good at telling stories. Well, not at making them interesting,
+            anyways. Well, my little friend, you've got something jammed in here
+            real good ...
+          </p>
+          <!-- <a href="./posts/star-wars.html">Read more</a> -->
+        </div>
       </article>
-      <article class="card">
-        <!-- TODO: h2 or h1? -->
-        <h2>Empire Strikes Back</h2>
-        <!-- image -->
-        <!-- <img src="" alt=""> -->
-        <p>Summary</p>
-        <a href="./posts/empire-strikes-back.html">Read more</a>
-      </article>
-      <article class="card">
-        <!-- TODO: h2 or h1? -->
-        <h2>Return of the Jedy</h2>
-        <!-- image -->
-        <!-- <img src="" alt=""> -->
-        <p>Summary</p>
-        <a href="./posts/return-of-the-jedy.html">Read more</a>
-      </article>
-      <!-- </section> -->
+      <!-- <section> -->
     </main>
     <aside>
       <p>Aside navbar</p>

@@ -1,0 +1,44 @@
+/**
+Styles for our card component
+*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #444;
+}
+
+.card {
+  position: relative;
+  background: #333;
+  width: 400px;
+  height: 75vh;
+  min-height: 375px;
+  border-radius: 6px;
+  padding: 2rem;
+  color: #aaa;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* BEM - convention */
+.card__image-container {
+  margin: -2rem -2rem 1rem -2rem;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__title {
+  color: white;
+  margin-top: 0;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.card__content {
+  margin-top: -1rem;
+}

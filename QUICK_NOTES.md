@@ -16,3 +16,23 @@
   - Subscribe link (open on modal the form to subscribe)
 
 - Footer with just who created the webpage and thanksgiving links
+
+// The sidebar and the captions for the blog entries
+
+> Logo Header
+> The cards
+
+## Card
+
+For my card I want to use:
+
+- SVG for adding things to the image
+- Animations :D
+
+1. My images need to have an almost 1:1 ratio for adding the SVG so I am cropping all the images with https://croppola.com/
+2. For SVG learning: https://css-tricks.com/using-svg/
+
+> SVG is an image format for vector graphics. It literally means Scalable Vector Graphics. Basically, what you work with in Adobe Illustrator. You can use SVG on the web pretty easily, but there is plenty you should know.
+
+> I got this line separator done with svg vectors that I will add as a separator element later as an SVG separator inline:
+> [svg-separator](./images/line-separator.svg)

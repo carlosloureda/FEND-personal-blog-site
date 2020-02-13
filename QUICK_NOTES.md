@@ -38,3 +38,5 @@ For my card I want to use:
 
 - For animations I am following [CSSTricks docs](https://css-tricks.com/almanac/properties/a/animation/) and focusing on [transform](https://css-tricks.com/almanac/properties/t/transform/) and [filter](https://css-tricks.com/almanac/properties/f/filter/)
 - Another good resource for animations is https://daneden.github.io/animate.css/
+
+- I want to add some animation to the button when i hover over the card component, on my learning process I am using some tools already desingned so I took the effect from [here](https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInLeft.css)

@@ -11,18 +11,50 @@ Styles for our card component
 }
 
 .card {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   background: #333;
   width: 400px;
   height: 65vh;
   min-height: 375px;
   border-radius: 6px;
-  padding: 2rem;
+  margin: 1em;
+  /* padding: 2rem; */
   color: #aaa;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  /* cursor: pointer; */
+}
+
+.card__button {
+  text-decoration: none;
+  color: #545581;
+  align-self: flex-end;
+  /* width: 30%; */
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.card__button i {
+  align-self: center;
+  padding-left: 1em;
+}
+.card:not(:hover) .card__button {
+  visibility: hidden;
+}
+
+.card:hover .card__button {
+  visibility: visible;
+  animation-name: bounceInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 /* BEM - convention */
 .card__image-container {
   margin: -2rem -2rem 1rem -2rem;
@@ -48,8 +80,12 @@ Styles for our card component
 }
 
 .card__content {
-  margin-top: -1rem;
   /* Initial opacity, trick for the animation :D */
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: -270px; /* due to the .card_svg thing :(*/
   opacity: 0;
   animation-name: ContentFadeIn;
   animation-duration: 0.8s;
@@ -60,9 +96,9 @@ Styles for our card component
 }
 
 .card__svg {
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 115px;
+  top: -230px;
 }
 
 .card__line {
@@ -127,4 +163,40 @@ Styles for our card component
     );
     stroke: #545581;
   }
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
 }

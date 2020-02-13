@@ -49,6 +49,14 @@ Styles for our card component
 
 .card__content {
   margin-top: -1rem;
+  /* Initial opacity, trick for the animation :D */
+  opacity: 0;
+  animation-name: ContentFadeIn;
+  animation-duration: 0.8s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+  /* Short hand animation ... */
+  /* animation: ContentFadeIn 0.8s 1.6s forwards; */
 }
 
 @keyframes ImageFadeIn {
@@ -65,5 +73,16 @@ Styles for our card component
     transform: translateY(0) scale(1);
     opacity: 1;
     filter: blur(0);
+  }
+}
+
+@keyframes ContentFadeIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

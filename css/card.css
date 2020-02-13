@@ -59,6 +59,12 @@ Styles for our card component
   /* animation: ContentFadeIn 0.8s 1.6s forwards; */
 }
 
+.card__svg {
+  position: absolute;
+  left: 0;
+  top: 115px;
+}
+
 @keyframes ImageFadeIn {
   0% {
     transform: translate(-0.5rem, -0.5rem) scale(1.05);

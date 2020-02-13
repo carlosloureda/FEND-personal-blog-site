@@ -26,7 +26,8 @@ Styles for our card component
   overflow: hidden;
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
   transform: scale(1.1);
   z-index: 1;
   /* cursor: pointer; */
@@ -45,11 +46,13 @@ Styles for our card component
   align-self: center;
   padding-left: 1em;
 }
-.card:not(:hover) .card__button {
+.card:not(:hover) .card__button,
+.card:not(:focus) .card__button {
   visibility: hidden;
 }
 
-.card:hover .card__button {
+.card:hover .card__button,
+.card:focus .card__button {
   visibility: visible;
   animation-name: bounceInLeft;
   animation-duration: 1s;

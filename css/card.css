@@ -2,11 +2,11 @@
 Styles for our card component
 */
 
-.container {
+.cards-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 75vh;
   background: #444;
 }
 
@@ -14,7 +14,7 @@ Styles for our card component
   position: relative;
   background: #333;
   width: 400px;
-  height: 75vh;
+  height: 65vh;
   min-height: 375px;
   border-radius: 6px;
   padding: 2rem;

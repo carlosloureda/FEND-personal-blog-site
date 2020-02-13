@@ -5,6 +5,19 @@
   --main-bg-color-2: #020024;
 }
 
+@font-face {
+  font-family: "Starjedi";
+  src: url("../fonts/starjedi/Starjedi.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
   color: white;
 }
@@ -16,7 +29,7 @@ body {
   background-color: var(--main-bg-color-1);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100% 50px;
+  grid-template-rows: 200px 100% 50px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   margin: 0 auto;
@@ -31,13 +44,22 @@ header {
   /* grid-area: hd; */
 
   /* background-color: red; */
-  background: var(--main-bg-color-2);
+  /* background: var(--main-bg-color-2);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 20%,
     rgba(59, 59, 64, 1) 59%,
     rgb(118, 127, 129) 87%
-  );
+  ); */
+  background-image: url("../images/death-star.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+header h1 {
+  font-family: Starjedi;
+  margin: 2em;
+  font-size: 3em;
 }
 
 main {

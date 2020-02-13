@@ -16,3 +16,27 @@
   - Subscribe link (open on modal the form to subscribe)
 
 - Footer with just who created the webpage and thanksgiving links
+
+// The sidebar and the captions for the blog entries
+
+> Logo Header
+> The cards
+
+## Card
+
+For my card I want to use:
+
+- SVG for adding things to the image
+- Animations :D
+
+1. My images need to have an almost 1:1 ratio for adding the SVG so I am cropping all the images with https://croppola.com/
+2. For SVG learning: https://css-tricks.com/using-svg/
+
+> SVG is an image format for vector graphics. It literally means Scalable Vector Graphics. Basically, what you work with in Adobe Illustrator. You can use SVG on the web pretty easily, but there is plenty you should know.
+
+- I got this line separator done with svg vectors that I will add as a separator element later as an SVG separator inline [svg-separator](./images/line-separator.svg)
+
+- For animations I am following [CSSTricks docs](https://css-tricks.com/almanac/properties/a/animation/) and focusing on [transform](https://css-tricks.com/almanac/properties/t/transform/) and [filter](https://css-tricks.com/almanac/properties/f/filter/)
+- Another good resource for animations is https://daneden.github.io/animate.css/
+
+- I want to add some animation to the button when i hover over the card component, on my learning process I am using some tools already desingned so I took the effect from [here](https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInLeft.css)

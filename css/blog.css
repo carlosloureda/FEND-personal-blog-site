@@ -97,3 +97,34 @@ header h1 a {
     font-size: 1.5em;
   }
 }
+
+/* Blog post */
+.blog-post {
+  margin: 16px;
+}
+
+.blog-post article {
+  clear: both;
+}
+
+.blog-post__figure {
+  width: 250px;
+  margin-top: 0px;
+}
+
+.blog-post__figure img {
+  width: 250px;
+}
+
+.blog-post__figure--left {
+  clear: left;
+  float: left;
+}
+
+.blog-post__figure--right {
+  clear: right;
+  float: right;
+}
+
+/* post__quote */
+/* blog-post__title */

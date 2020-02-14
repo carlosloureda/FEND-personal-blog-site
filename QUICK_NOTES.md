@@ -40,3 +40,7 @@ For my card I want to use:
 - Another good resource for animations is https://daneden.github.io/animate.css/
 
 - I want to add some animation to the button when i hover over the card component, on my learning process I am using some tools already desingned so I took the effect from [here](https://github.com/daneden/animate.css/blob/master/source/bouncing_entrances/bounceInLeft.css)
+
+The blog posts are taken from here: https://starwars.fandom.com/wiki/Star_Wars:_Episode_IV_A_New_Hope
+
+https://css-tricks.com/snippets/css/css-grid-starter-layouts/

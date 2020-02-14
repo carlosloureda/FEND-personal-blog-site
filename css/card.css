@@ -6,7 +6,7 @@ Styles for our card component
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  /* height: 75vh; */
   background: #444;
 }
 
@@ -16,8 +16,9 @@ Styles for our card component
   flex-direction: column;
   background: #333;
   width: 400px;
-  height: 65vh;
-  min-height: 375px;
+  /* height: 100vh; */
+  min-height: 650px;
+  /* min-height: 375px; */
   border-radius: 6px;
   margin: 1em;
   /* padding: 2rem; */
@@ -41,6 +42,7 @@ Styles for our card component
   visibility: hidden;
   display: flex;
   flex-direction: row;
+  margin-bottom: auto;
 }
 .card__button i {
   align-self: center;
@@ -64,7 +66,7 @@ Styles for our card component
 }
 
 .card__image {
-  max-width: 100%;
+  width: 100%;
   /* Initial opacity, trick for the animation :D */
   opacity: 0;
   animation-name: ImageFadeIn;
@@ -88,7 +90,7 @@ Styles for our card component
   flex-direction: column;
   padding-left: 2rem;
   padding-right: 2rem;
-  /* margin-top: -270px;  */
+  margin-top: -270px;
   opacity: 0;
   animation-name: ContentFadeIn;
   animation-duration: 0.8s;

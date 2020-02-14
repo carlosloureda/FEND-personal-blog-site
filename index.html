@@ -8,14 +8,17 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/card.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Personal Blog Site</h1>
+      <h1>Star Wars Blog</h1>
     </header>
-    <main class="container">
-      <!-- <section> -->
-      <article class="card">
+    <main class="cards-container">
+      <article class="card" tabindex="1">
         <div class="card__image-container">
           <img
             class="card__image"
@@ -23,8 +26,20 @@
             alt="A New Hope film cover, Luke holding a ligthsable, Han Solo a gun, also Leia and Obi Wan appear there"
           />
         </div>
-        <!-- SVG: Line separator -->
-
+        <svg class="card__svg" viewBox="0 0 800 500">
+          <path
+            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+            stroke="transparent"
+            fill="#333"
+          />
+          <path
+            class="card__line"
+            d="M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
+            stroke="blue"
+            stroke-width="3"
+            fill="transparent"
+          />
+        </svg>
         <div class="card__content">
           <h2 class="card__title">A New Hope</h2>
           <p>
@@ -34,10 +49,92 @@
             anyways. Well, my little friend, you've got something jammed in here
             real good ...
           </p>
-          <!-- <a href="./posts/star-wars.html">Read more</a> -->
+          <a href="./posts/a-new-hope.html" class="card__button" tabindex="1"
+            >Go To Article <i class="fa fa-chevron-right"></i
+          ></a>
         </div>
       </article>
-      <!-- <section> -->
+      <article class="card" tabindex="1">
+        <div class="card__image-container">
+          <img
+            class="card__image"
+            src="./images/strike-back.jpg"
+            alt="Empire Strikes Back film cover, Luke riding an animal, Han Solo holding Leia almost ready to kiss her"
+          />
+        </div>
+        <svg class="card__svg" viewBox="0 0 800 500">
+          <path
+            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+            stroke="transparent"
+            fill="#333"
+          />
+          <path
+            class="card__line"
+            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+            stroke="pink"
+            stroke-width="3"
+            fill="transparent"
+          />
+        </svg>
+
+        <div class="card__content">
+          <h2 class="card__title">Empire Strikes Back</h2>
+          <p>
+            Alert all commands. Ready for the tractor beam. Artoo, come back at
+            once! You haven't finished with me yet! You don't know how to fix
+            the hyperdrive. Chewbacca can do it. I'm standing here in pieces,
+            and you're having delusions of grandeur!
+          </p>
+          <a
+            href="./posts/empire-strikes-back.html"
+            class="card__button"
+            tabindex="1"
+            >Go To Article <i class="fa fa-chevron-right"></i
+          ></a>
+        </div>
+      </article>
+      <article class="card" tabindex="1">
+        <div class="card__image-container">
+          <img
+            class="card__image"
+            src="./images/return-of-jedi.jpg"
+            alt="Empire Strikes Back film cover, Luke riding an animal, Han Solo holding Leia almost ready to kiss her"
+          />
+        </div>
+
+        <svg class="card__svg" viewBox="0 0 800 500">
+          <path
+            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+            stroke="transparent"
+            fill="#333"
+          />
+          <path
+            class="card__line"
+            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+            stroke="pink"
+            stroke-width="3"
+            fill="transparent"
+          />
+        </svg>
+
+        <div class="card__content">
+          <h2 class="card__title">Return of the Jedi</h2>
+          <p>
+            The Emperor knew, as I did, if Anakin were to have any offspring,
+            they would be a threat to him. That is the reason why your sister
+            remains safely anonymous. Leia! Leia's my sister. Your insight
+            serves you well. Bury your feelings deep down, Luke. They do you
+            credit. But they could be made to serve the Emperor. We're coming!
+            Come on! Come on!
+          </p>
+          <a
+            href="./posts/return-of-the-jedy.html"
+            class="card__button"
+            tabindex="1"
+            >Go To Article <i class="fa fa-chevron-right"></i
+          ></a>
+        </div>
+      </article>
     </main>
     <aside>
       <p>Aside navbar</p>

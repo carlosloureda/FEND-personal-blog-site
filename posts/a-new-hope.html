@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/blog.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1><a href="../index.html"> Star Wars Blog</a></h1>
     </header>
     <main>
@@ -275,13 +275,29 @@
           </p>
         </article>
       </section>
-      <section>
-        <h3>Author info</h3>
-        <p>Name</p>
-        <p>Title</p>
-        <p>Current Company/School</p>
-        <p>Short Bio</p>
-        <p>Avatar</p>
+      <section class="author-card">
+        <header class="author-card__header">
+          <h3>Written by:</h3>
+          <div class="author-card__header__avatar">
+            <img
+              class="author-card__header__avatar__image"
+              src="../images/avatars/luke.jpg"
+              alt="Luke Skywalker profile avatar"
+            />
+            <p>Luke Skywalker</p>
+          </div>
+        </header>
+        <article class="author-card__content">
+          <h4>Master of the force - Graduated from life</h4>
+          <div class="author-card__content__bio">
+            <p>
+              Luke was born on Polis Massa in 19 BBY. His mother, Padmé Amidala,
+              died in childbirth. His twin sister, Leia, was adopted by Queen
+              Breha and Bail Organa of Alderaan.
+            </p>
+          </div>
+        </article>
+        <!-- <h3 class="author-card__title">Post author:</h3> -->
       </section>
       <section>
         <h3>Social Sharing</h3>

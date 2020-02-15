@@ -12,13 +12,13 @@
 body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10vw 100% 10vw;
+  grid-template-rows: 200px 100% 10vw;
   grid-gap: 1em;
   margin: 0 auto;
 }
 
 header,
-footer {
+.footer {
   grid-column: 1 / span 5;
 }
 
@@ -29,24 +29,31 @@ main {
   align-content: flex-start;
   background: #eaeaea;
 }
-
+/*
 aside {
-  grid-column: span 2;
-}
+  grid-column: 4 / 5;
+  height: 250px;
+  position: fixed;
+  width: 25%;
+  right: 10px;
+  margin-top: 215px;
+} */
 
 /* Demo Specific Styles */
 
 .header,
 aside,
-footer {
+.footer {
   background: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header,
-footer {
+.header {
+  height: 200px;
+}
+.footer {
   height: 10vw;
 }
 .header {
@@ -66,7 +73,7 @@ footer {
   padding-left: 50px;
 }
 
-footer {
+.footer {
   color: white;
   background: var(--main-bg-color-2);
   background: linear-gradient(
@@ -184,8 +191,24 @@ footer {
 .author-card__bio { */
 }
 
-/* @media (max-width<= 740px) {
-} */
+.social {
+  /* background-color: #aaaaaa; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 250px;
+  border-radius: 6px;
+  /* margin: em; */
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* color: white; */
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  /* overflow: hidden; */
+}
+
+/*  Sidebar */
 
 @media (max-width: 700px) {
   main,
@@ -197,12 +220,34 @@ footer {
   }
   .author-card {
     width: 100%;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  aside {
+    /* height: 25%; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start; */
   }
 }
 
-@media (min-width: 701px) and (max-width: 1100px) {
+@media (min-width: 701px) {
   header h1 {
     font-size: 1.5em;
+  }
+
+  aside {
+    grid-column: 4 / 5;
+    /* height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    /* position: fixed;
+    width: 25%;
+    right: 10px;
+    margin-top: 215px; */
+    /* top: 215px; */
   }
 }

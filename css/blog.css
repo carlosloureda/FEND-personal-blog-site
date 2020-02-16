@@ -1,85 +1,11 @@
-:root {
-  --main-bg-color-1: #444444;
-}
-
-@font-face {
-  font-family: "Starjedi";
-  src: url("../fonts/starjedi/Starjedi.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10vw 100% 10vw;
-  grid-gap: 1em;
-  margin: 0 auto;
-}
-
-header,
-footer {
-  grid-column: 1 / span 5;
-}
-
 main {
-  grid-column: 1 / span 3;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  background: #eaeaea;
 }
 
 aside {
-  grid-column: span 2;
-}
-
-/* Demo Specific Styles */
-
-.header,
-aside,
-footer {
   background: #eaeaea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header,
-footer {
-  height: 10vw;
-}
-.header {
-  background-image: url("../images/death-star.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-}
-.header h1 {
-  font-family: Starjedi;
-  /* margin: 2em; */
-  font-size: 2.5em;
-  color: white;
-  /* align-self: flex-start; */
-  margin-right: auto;
-  padding-left: 50px;
-}
-
-footer {
-  color: white;
-  background: var(--main-bg-color-2);
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 20%,
-    rgba(59, 59, 64, 1) 59%,
-    rgba(118, 127, 129, 1) 87%
-  );
-}
-
-.header h1 a {
-  text-decoration: none;
-  color: white;
 }
 
 /* Blog post */
@@ -94,6 +20,9 @@ footer {
 .blog-post__figure {
   width: 250px;
   margin-top: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-right: 10px;
 }
 
 .blog-post__figure img {
@@ -109,9 +38,6 @@ footer {
   clear: right;
   float: right;
 }
-
-/* post__quote */
-/* blog-post__title */
 
 /* Author */
 
@@ -161,8 +87,6 @@ footer {
 .author-card__header__avatar__image {
   width: 100px;
   height: 100px;
-  /* border-color: aqua;
-  border-width: thick; */
   border: outset beige;
   border-radius: 50%;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -175,34 +99,42 @@ footer {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-content: stretch;
-  /* .author-card__title {
-}
-.author-card__avatar {
-}
-.author-card__bio { */
 }
 
-/* @media (max-width<= 740px) {
-} */
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 250px;
+  border-radius: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 700px) {
-  main,
-  aside {
-    grid-column: 1 / span 5;
-  }
-  header h1 {
-    font-size: 1em;
-  }
   .author-card {
-    width: 100%;
-    margin: 0;
+    width: calc(100% - 32px);
   }
 }
 
-@media (min-width: 701px) and (max-width: 1100px) {
-  header h1 {
-    font-size: 1.5em;
+@media (max-width: 700px) {
+  .blog-post__figure {
+    width: 100%;
+  }
+  .blog-post__figure img {
+    width: 100%;
+  }
+  .blog-post__figure--left {
+    clear: both;
+    float: none;
+  }
+
+  .blog-post__figure--right {
+    clear: both;
+    float: none;
   }
 }

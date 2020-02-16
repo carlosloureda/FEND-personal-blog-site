@@ -4,10 +4,12 @@ Styles for our card component
 
 .cards-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   /* height: 75vh; */
   background: #444;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -49,11 +51,12 @@ Styles for our card component
   padding-left: 1em;
 }
 .card:not(:hover) .card__button,
-.card:not(:focus) .card__button {
+.cardº:not(:focus) .card__button {
   visibility: hidden;
 }
 
 .card:hover .card__button,
+.card.highlighted .card__button,
 .card:focus .card__button {
   visibility: visible;
   animation-name: bounceInLeft;
@@ -222,4 +225,21 @@ Styles for our card component
     opacity: 1;
     filter: blur(0);
   }
+}
+
+@media (max-width: 390px) {
+  /* .card__svg {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: -230px;
+  }
+  .card__content {
+    margin-top: 40%;
+  } */
+  /* .card:hover,
+  .card:focus {
+    transform: none;
+    z-index: 1;
+  } */
 }

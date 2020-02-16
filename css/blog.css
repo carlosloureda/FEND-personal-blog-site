@@ -1,79 +1,11 @@
-:root {
-  --main-bg-color-1: #444444;
-}
-
-@font-face {
-  font-family: "Starjedi";
-  src: url("../fonts/starjedi/Starjedi.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 100% 10vw;
-  grid-gap: 1em;
-  margin: 0 auto;
-}
-
-.header {
-  grid-column: 1 / span 5;
-  background-image: url("../images/death-star.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  height: 200px;
-}
-
-.header h1 {
-  font-family: Starjedi;
-  /* margin: 2em; */
-  font-size: 2.5em;
-  color: white;
-  /* align-self: flex-start; */
-  margin-right: auto;
-  padding-left: 50px;
-}
-
-.header h1 a {
-  text-decoration: none;
-  color: white;
-}
-
-aside,
-.footer {
-  background: #eaeaea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 main {
-  grid-column: 1 / span 3;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  background: #eaeaea;
 }
 
 aside {
-  grid-column: 4 / 5;
-  background-color: red;
-}
-
-.footer {
-  grid-column: 1 / span 5;
-  /* height: 10vw; */
-  color: white;
-  background: var(--main-bg-color-2);
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 20%,
-    rgba(59, 59, 64, 1) 59%,
-    rgba(118, 127, 129, 1) 87%
-  );
+  background: #eaeaea;
 }
 
 /* Blog post */
@@ -183,59 +115,12 @@ aside {
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
-/*  Sidebar */
-
 @media (max-width: 700px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px 1fr 700px 100px;
-    grid-gap: 0em;
-    margin: 0 auto;
-  }
-  .header {
-    grid-row: 1/2;
-    grid-column: 1 / span 5;
-  }
-  main {
-    grid-row: 2/3;
-    grid-column: 1 / span 5;
-  }
-  aside {
-    grid-row: 3/4;
-    grid-column: 1 / span 5;
-  }
-  .footer {
-    grid-row: 4/5;
-    grid-column: 1 / span 5;
-  }
   .author-card {
     width: calc(100% - 32px);
   }
 }
 
-@media (min-width: 701px) {
-  /* .header h1 {
-    font-size: 1.5em;
-  } */
-}
-
-@media (max-width: 396px) {
-  .header h1 {
-    font-size: 1.5em;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@media (min-width: 397px) and (max-width: 700px) {
-  .header h1 {
-    font-size: 2em;
-    /* align-self: center; */
-    margin: 0 auto;
-    padding: 0;
-  }
-}
 @media (max-width: 700px) {
   .blog-post__figure {
     width: 100%;

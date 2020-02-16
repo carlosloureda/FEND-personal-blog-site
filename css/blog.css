@@ -88,6 +88,9 @@ aside {
 .blog-post__figure {
   width: 250px;
   margin-top: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-right: 10px;
 }
 
 .blog-post__figure img {
@@ -171,7 +174,7 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 250px;
+  max-width: 250px;
   border-radius: 6px;
   margin-left: 16px;
   margin-right: 16px;
@@ -187,7 +190,7 @@ aside {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 150px 1fr 700px 100px;
-    grid-gap: 1em;
+    grid-gap: 0em;
     margin: 0 auto;
   }
   .header {
@@ -202,22 +205,51 @@ aside {
     grid-row: 3/4;
     grid-column: 1 / span 5;
   }
-  header h1 {
-    font-size: 1em;
-  }
   .footer {
     grid-row: 4/5;
     grid-column: 1 / span 5;
   }
   .author-card {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: calc(100% - 32px);
   }
 }
 
 @media (min-width: 701px) {
-  header h1 {
+  /* .header h1 {
     font-size: 1.5em;
+  } */
+}
+
+@media (max-width: 396px) {
+  .header h1 {
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 397px) and (max-width: 700px) {
+  .header h1 {
+    font-size: 2em;
+    /* align-self: center; */
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 700px) {
+  .blog-post__figure {
+    width: 100%;
+  }
+  .blog-post__figure img {
+    width: 100%;
+  }
+  .blog-post__figure--left {
+    clear: both;
+    float: none;
+  }
+
+  .blog-post__figure--right {
+    clear: both;
+    float: none;
   }
 }

@@ -4,10 +4,12 @@ Styles for our card component
 
 .cards-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   /* height: 75vh; */
   background: #444;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -223,3 +225,15 @@ Styles for our card component
     filter: blur(0);
   }
 }
+
+/* @media (max-width: 390px) {
+  .card__svg {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: -230px;
+  }
+  .card__content {
+    margin-top: 40%;
+  }
+} */

@@ -51,11 +51,12 @@ Styles for our card component
   padding-left: 1em;
 }
 .card:not(:hover) .card__button,
-.card:not(:focus) .card__button {
+.cardº:not(:focus) .card__button {
   visibility: hidden;
 }
 
 .card:hover .card__button,
+.card.highlighted .card__button,
 .card:focus .card__button {
   visibility: visible;
   animation-name: bounceInLeft;
@@ -226,8 +227,8 @@ Styles for our card component
   }
 }
 
-/* @media (max-width: 390px) {
-  .card__svg {
+@media (max-width: 390px) {
+  /* .card__svg {
     position: relative;
     width: 100%;
     left: 0;
@@ -235,5 +236,10 @@ Styles for our card component
   }
   .card__content {
     margin-top: 40%;
-  }
-} */
+  } */
+  /* .card:hover,
+  .card:focus {
+    transform: none;
+    z-index: 1;
+  } */
+}

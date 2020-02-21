@@ -11,7 +11,6 @@ const cardResizeHandler = () => {
 
       let top = -1 * Math.round(cardWidth / 1.74);
       let marginTop = top - 20;
-      // console.log(`Top: ${top}, Margin Top: ${marginTop}`);
 
       entry.querySelector(".card__svg").style.top = top;
       entry.querySelector(".card__content").style.marginTop = `${marginTop}px`;

@@ -1,11 +1,3 @@
-/* Need to adjust the height og body to the 80% */
-/* TODO: move this to its own file */
-/* body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 80% 10vw;
-} */
-
 /**
 Styles for our card component
 */

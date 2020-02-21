@@ -227,16 +227,23 @@ Styles for our card component
   }
 }
 
-@media (max-width: 390px) {
-  /* .card__svg {
-    position: relative;
-    width: 100%;
-    left: 0;
-    top: -230px;
+@media (max-width: 250px) {
+  .card {
+    min-height: auto;
+  }
+  .card__title,
+  aside nav h2 {
+    font-size: 1.2em;
   }
   .card__content {
-    margin-top: 40%;
-  } */
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card__content p,
+  aside nav ul > * {
+    font-size: 0.8em;
+  }
   /* .card:hover,
   .card:focus {
     transform: none;

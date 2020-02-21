@@ -155,3 +155,24 @@ a {
     float: none;
   }
 }
+@media (max-width: 250px) {
+  .blog-post article {
+    font-size: 0.8em;
+  }
+  .blog-post__title {
+    font-size: 1.2em;
+  }
+  /* .card__title,
+  aside nav h2 {
+    font-size: 1.2em;
+  }
+  .card__content {
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card__content p,
+  aside nav ul > * {
+    font-size: 0.8em;
+  } */
+}

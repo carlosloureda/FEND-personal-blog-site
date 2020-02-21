@@ -4,10 +4,6 @@ main {
   align-content: flex-start;
 }
 
-aside {
-  background: #eaeaea;
-}
-
 /* Blog post */
 .blog-post {
   margin: 16px;

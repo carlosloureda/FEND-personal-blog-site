@@ -1,7 +1,17 @@
 :root {
   --main-bg-color-1: #444444;
-  --main-bg-color-2: #020024;
+  /* #333  */
+  --main-bg-color-2: #333;
+  /* --color-light-shade-1: #777777;
+  --color-light-shade-2: #bbbbbb;
+  --color-dark-shade-1: #2c2c2c;
+  --color-dark-shade-2: #131313; */
+
+  --color2: #717070;
+  --color3: #505050;
+  --color4: #a9a8a8;
 }
+/* box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2); */
 
 @font-face {
   font-family: "Starjedi";
@@ -22,6 +32,7 @@ body {
   grid-template-rows: 200px 100% 10vw;
   /* grid-gap: 1em; */
   margin: 0 auto;
+  background-color: var(--color4);
 }
 
 .header {
@@ -49,11 +60,31 @@ body {
 
 main {
   grid-column: 1 / span 3;
+  /* min-height: 850px; */
 }
 
 aside {
   grid-column: 4 / 5;
-  background-color: var(--main-bg-color-2);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  color: var(--color4);
+  background-color: var(--main-bg-color-1);
+  display: flex;
+  justify-content: center;
+}
+aside nav {
+  max-height: 650px;
+  margin-top: 100px;
+  background: #333;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 16px;
+}
+aside nav a {
+  color: var(--color4);
 }
 
 .footer {
@@ -71,11 +102,19 @@ aside {
   justify-content: center;
 }
 
-@media (max-width: 700px) {
+/* 3 cards row */
+@media (min-width: 1152px) and (max-width: 1728px) {
+  aside nav {
+    margin-top: 15px;
+  }
+}
+
+/* Tablet & samrtphoe */
+@media (max-width: 1151px) {
   body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px 1fr 750px 100px;
+    grid-template-rows: 150px 1fr auto 100px;
     grid-gap: 0em;
     margin: 0 auto;
   }
@@ -90,10 +129,31 @@ aside {
   aside {
     grid-row: 3/4;
     grid-column: 1 / span 5;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
+
   .footer {
     grid-row: 4/5;
     grid-column: 1 / span 5;
+  }
+}
+
+@media (max-width: 863px) {
+  aside nav {
+    width: 400px;
+    margin: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+}
+/* 2 cards row */
+@media (min-width: 864px) and (max-width: 1151px) {
+  aside nav {
+    width: 800px;
+    margin-bottom: 32px;
+    margin-top: 32px;
   }
 }
 

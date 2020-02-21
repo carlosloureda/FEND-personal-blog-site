@@ -84,7 +84,8 @@ aside nav {
   padding: 16px;
 }
 aside nav a {
-  color: var(--color4);
+  /* color: var(--color4); */
+  color: orange;
 }
 
 .footer {

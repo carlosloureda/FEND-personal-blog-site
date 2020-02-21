@@ -91,16 +91,25 @@ aside nav a {
 .footer {
   grid-column: 1 / span 5;
   color: white;
-  background: var(--main-bg-color-2);
+  /* background: var(--main-bg-color-2);
   background: linear-gradient(
     270deg,
     rgba(2, 0, 36, 1) 20%,
     rgba(59, 59, 64, 1) 59%,
     rgba(118, 127, 129, 1) 87%
-  );
+  ); */
+  background-image: url("../images/star-wars-2.jpg");
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #aaaaaa;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #545581;
 }
 
 /* 3 cards row */
@@ -183,5 +192,11 @@ aside nav a {
   .header {
     background-position: initial;
     background-color: #444;
+  }
+  .footer h3 {
+    font-size: 0.9em;
+  }
+  .footer div {
+    font-size: 0.7em;
   }
 }

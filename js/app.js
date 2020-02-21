@@ -54,5 +54,20 @@ const activeCardOnScrollHandler = () => {
   }
 };
 
-activeCardOnScrollHandler();
-cardResizeHandler();
+/**
+ * Appends on footer the actual year :D
+ */
+const showCopyRightYear = () => {
+  document.getElementById(
+    "copyright-year"
+  ).innerText = `©${new Date().getFullYear()}`;
+};
+
+/**
+ * Waits until the DOM has loaded all the content, inside of here I run the necessary event listeners
+ */
+window.addEventListener("DOMContentLoaded", () => {
+  activeCardOnScrollHandler();
+  cardResizeHandler();
+  showCopyRightYear();
+});

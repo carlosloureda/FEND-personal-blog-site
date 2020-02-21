@@ -158,7 +158,15 @@ aside nav a {
   }
 }
 
-@media (max-width: 396px) {
+@media (min-width: 397px) and (max-width: 700px) {
+  .header h1 {
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 396px) {
   .header h1 {
     font-size: 1.5em;
     margin: 0 auto;
@@ -166,10 +174,14 @@ aside nav a {
   }
 }
 
-@media (min-width: 397px) and (max-width: 700px) {
+@media (max-width: 250px) {
   .header h1 {
-    font-size: 2em;
+    font-size: 0.8em;
     margin: 0 auto;
     padding: 0;
+  }
+  .header {
+    background-position: initial;
+    background-color: #444;
   }
 }

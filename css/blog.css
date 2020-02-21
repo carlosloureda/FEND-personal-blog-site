@@ -1,3 +1,6 @@
+body {
+  word-wrap: break-word;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -159,8 +162,39 @@ a {
   .blog-post article {
     font-size: 0.8em;
   }
-  .blog-post__title {
+  .blog-post__title,
+  .author-card__header > h3 {
     font-size: 1.2em;
+  }
+  .author-card__content {
+    font-size: 1em;
+    margin-top: 0px;
+  }
+  .author-card__content__bio {
+    font-size: 0.8em;
+  }
+  .author-card__header__avatar {
+    display: flex;
+    flex-direction: column;
+  }
+  .author-card__header__avatar p {
+    font-size: 1em;
+    padding-left: 0px;
+  }
+  .author-card__header__avatar__image {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  .social {
+    margin: 1em;
+  }
+  .social div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .blog-post__quote {
+    margin: 0.5em;
   }
   /* .card__title,
   aside nav h2 {

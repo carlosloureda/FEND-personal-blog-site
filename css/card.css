@@ -244,9 +244,4 @@ Styles for our card component
   aside nav ul > * {
     font-size: 0.8em;
   }
-  /* .card:hover,
-  .card:focus {
-    transform: none;
-    z-index: 1;
-  } */
 }

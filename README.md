@@ -14,6 +14,8 @@ First project for the Front End Nanodegree for Udacity that I am mentoring, here
 - Download to your project directory.
 - Open `index.html` file in your preferred web browser.
 
+If you want to see some development notes I took while working on this project please take a look to [QUICK_NOTES](./QUICK_NOTES.md)
+
 ## Requirements
 
 This project requires you to utilize your HTML and CSS skills to build out a personal blog website, including custom images, layout, and styling. Along with webpage design considerations, you'll work to appropriately structure your files, as well as use proper CSS and HTML formatting & style.
